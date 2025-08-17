@@ -27,3 +27,14 @@ This is an Interactive Resume Builder that allows users to input personal inform
 5. See the live preview update instantly on the right side.
 6. Use the toggle button in the header to switch between dark and light mode.
 7. Click "Clear Form" to reset the form and preview.
+
+## Screenshots Preview
+
+### Light Mode
+![Light Mode Screenshot](assets/screenshot-light.png)
+
+### Dark Mode
+![Dark Mode Screenshot](assets/screenshot-dark.png)
+
+### Interactive Form and Resume Preview
+![Filled Resume Example](assets/screenshot-filled.png)
