@@ -134,7 +134,7 @@ button:hover {
   display: flex;
   justify-content: flex-start;
   margin-top: 20px;
-  gap: 20px;
+  gap: 20px; /* Space between Clear and Download buttons */
 }
 
 .preview-section {
@@ -266,6 +266,7 @@ body.dark-mode button:hover {
   margin-top: 50px;
 }
 
+/* Progress Bar Container */
 #progress-container {
   position: fixed;
   top: 0;
@@ -278,6 +279,7 @@ body.dark-mode button:hover {
   overflow: hidden;
 }
 
+/* Animated Progress Bar */
 #progress-bar {
   height: 100%;
   width: 0%;

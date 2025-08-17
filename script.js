@@ -97,7 +97,11 @@ function updatePreview() {
   previewSkills.textContent = skillsArray.join(", ");
 }
 
+// Update progress bar width based on form completion
 function updateProgress() {
+  const totalFields = 5; // name, phone, email, summary, skills
+
+  // Count non-empty personal info fields
   let filledFields = 0;
   if (nameInput.value.trim() !== "") filledFields++;
   if (phoneInput.value.trim() !== "") filledFields++;
@@ -105,15 +109,12 @@ function updateProgress() {
   if (summaryInput.value.trim() !== "") filledFields++;
   if (skillsInput.value.trim() !== "") filledFields++;
 
+  // Count filled education and experience inputs
   const eduInputs = Array.from(educationList.querySelectorAll("input"));
   const expInputs = Array.from(experienceList.querySelectorAll("input"));
 
-  const eduFilled = eduInputs.filter(
-    (input) => input.value.trim() !== ""
-  ).length;
-  const expFilled = expInputs.filter(
-    (input) => input.value.trim() !== ""
-  ).length;
+  const eduFilled = eduInputs.filter((input) => input.value.trim() !== "").length;
+  const expFilled = expInputs.filter((input) => input.value.trim() !== "").length;
 
   const maxDynamicFields = eduInputs.length + expInputs.length;
   const totalDynamicFields = totalFields + maxDynamicFields;
@@ -128,6 +129,7 @@ function updateProgress() {
   progressBar.style.width = `${percent}%`;
 }
 
+// PDF download functionality using html2pdf.js
 document.getElementById("download-pdf").addEventListener("click", () => {
   const resume = document.getElementById("resume-preview");
   const opt = {
@@ -153,5 +155,6 @@ modeToggle.addEventListener("click", () => {
   }
 });
 
+// Initialize preview and progress on page load
 updatePreview();
 updateProgress();
