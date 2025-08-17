@@ -31,10 +31,10 @@ This is an Interactive Resume Builder that allows users to input personal inform
 ## Screenshots Preview
 
 ### Light Mode
-![Light Mode Screenshot](assets/screenshot-light.png)
+![Light Mode Screenshot](https://github.com/Mangalam-17/Interactive-Resume-Builder/blob/6dd598d35293373f7c5df0b4329ea0c03bc909c4/Screenshots/lightmode.png)
 
 ### Dark Mode
-![Dark Mode Screenshot](assets/screenshot-dark.png)
+![Dark Mode Screenshot](https://github.com/Mangalam-17/Interactive-Resume-Builder/blob/6dd598d35293373f7c5df0b4329ea0c03bc909c4/Screenshots/darkmode.png)
 
 ### Interactive Form and Resume Preview
-![Filled Resume Example](assets/screenshot-filled.png)
+![Filled Resume Example](https://github.com/Mangalam-17/Interactive-Resume-Builder/blob/6dd598d35293373f7c5df0b4329ea0c03bc909c4/Screenshots/filledform.png)
