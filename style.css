@@ -134,6 +134,7 @@ button:hover {
   display: flex;
   justify-content: flex-start;
   margin-top: 20px;
+  gap: 20px; /* Space between Clear and Download buttons */
 }
 
 .preview-section {
@@ -265,18 +266,23 @@ body.dark-mode button:hover {
   margin-top: 50px;
 }
 
-.form-section,
-.preview-section {
-  transition:
-    transform 0.3s cubic-bezier(0.4, 0.12, 0.3, 1),
-    box-shadow 0.3s;
+/* Progress Bar Container */
+#progress-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background-color: #eee;
+  z-index: 1000;
+  border-radius: 0 0 4px 4px;
+  overflow: hidden;
 }
 
-.form-section:hover,
-.preview-section:hover {
-  transform: scale(1.03) translateY(-6px);
-  box-shadow:
-    0 16px 32px rgba(0, 0, 0, 0.12),
-    0 4px 8px rgba(0, 0, 0, 0.08);
-  cursor: pointer;
+/* Animated Progress Bar */
+#progress-bar {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #4caf50, #087f23);
+  transition: width 0.3s ease-in-out;
 }
