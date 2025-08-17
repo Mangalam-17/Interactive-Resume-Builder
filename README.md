@@ -1,5 +1,7 @@
 # Interactive Resume Builder
 
+### Live Demo -> https://mangalam-17.github.io/Interactive-Resume-Builder/
+
 ## Overview
 
 This is an Interactive Resume Builder that allows users to input personal information, education, experience, and skills, and see a live preview of their resume on the same page. It includes a dark/light mode toggle, dynamic addition of education and experience fields, and responsive design.
