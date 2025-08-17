@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Interactive Resume Builder</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Interactive Resume Builder</h1>
+      <button id="mode-toggle" aria-label="Toggle Dark/Light Mode">Switch to dark mode🌙</button>
+    </header>
+    <main>
+      <section class="form-section">
+        <form id="resume-form">
+          <fieldset>
+            <legend>Personal Information</legend>
+            <input type="text" id="name" placeholder="Full Name" required />
+            <input type="tel" id="phone" placeholder="Phone Number" required />
+            <input type="email" id="email" placeholder="Email" required />
+            <textarea id="summary" placeholder="Profile Summary"></textarea>
+          </fieldset>
+
+          <fieldset id="education-section">
+            <legend>Education</legend>
+            <div id="education-list"></div>
+            <button type="button" id="add-education">+ Add Education</button>
+          </fieldset>
+
+          <fieldset id="experience-section">
+            <legend>Experience</legend>
+            <div id="experience-list"></div>
+            <button type="button" id="add-experience">+ Add Experience</button>
+          </fieldset>
+
+          <fieldset>
+            <legend>Skills</legend>
+            <input
+              type="text"
+              id="skills"
+              placeholder="Skills (comma separated)"
+            />
+          </fieldset>
+
+          <div class="form-actions">
+            <button type="reset">Clear Form</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="preview-section">
+        <h2>Resume Preview</h2>
+        <div id="resume-preview">
+          <h1 id="preview-name"></h1>
+          <p id="preview-contact"></p>
+          <p id="preview-summary"></p>
+
+          <section>
+            <h3>Education</h3>
+            <ul id="preview-education"></ul>
+          </section>
+
+          <section>
+            <h3>Experience</h3>
+            <ul id="preview-experience"></ul>
+          </section>
+
+          <section>
+            <h3>Skills</h3>
+            <p id="preview-skills"></p>
+          </section>
+        </div>
+      </section>
+    </main>
+    <h5 class="credit">Made with ❤️ by Mangalam</h5>
+
+    <script src="script.js"></script>
+  </body>
+</html>
